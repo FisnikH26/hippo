@@ -5,18 +5,9 @@ import { HippoReadsContext } from "../assets/context/HippoReadsContext";
 import axios from "axios";
 const TopBooks = () => {
   const [topBooks, setTopbooks] = useState([]);
-  const [topBook, setTopbook] = useState("No Name");
   const { url_books,loading, setLoading } = useContext(HippoReadsContext);
 
-  const getTopBooks = async () => {
-    setLoading(true);
-    await fetch(url_books + "?sortBy=rating&order=desc")
-      .then((res) => res.json())
-      .then((data) => {
-        setTopbooks(data);
-        setLoading(false);
-      });
-  };
+
   const topbooksDB = async ()=>{
     try {
       const res = await axios.get('http://localhost:8800/topbooks')
