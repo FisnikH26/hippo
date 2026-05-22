@@ -1,0 +1,87 @@
+:root{
+    /* main and secondary */
+    --white:255,255,255;
+    --black:19, 19, 19;
+    --pearl:234, 219, 203;
+    --cafe-noir:107,72,44;
+    
+    /* main lighter */
+    --gray:150,150,150;
+    --bronze:205,168,130;
+    /* btn */
+    --green:41, 75, 41;
+    --green-lighter:219, 231, 201;
+
+    --maroon:154, 3, 30;
+    --orange:227, 100, 20;
+    --gold:251, 139, 36;
+
+
+
+    /* Slider colors */
+
+    --silver:211, 211, 211;
+    --darker-white:177, 177, 177;
+    --dark-white:133, 133, 133;
+    
+    --dark-gray:44, 44, 44;
+    --gainsboro:88,88,88;
+
+    --beige:205, 168, 130;
+    --coffee:113, 85, 49;
+
+}
+
+.light{
+    --main-color:rgb(var(--white));
+    --main-lighter:rgb(var(--gray));
+    --secondary-color: rgb(var(--black));
+
+    --follow-btn: rgb(var(--green));
+    --unfollow-btn: rgb(var(--green-lighter));
+
+    --read-btn:rgb(var(--maroon));
+    --reading-btn:rgb(var(--orange));
+    --wanttoread-btn:rgb(var(--gold));
+
+    --slider-color-first: rgb(var(--black));
+    --slider-color-second:rgb(var(--dark-gray));
+    --slider-color-third:rgb(var(--gainsboro));
+
+
+}
+
+.dark{
+    --main-color:rgb(var(--black));
+    --main-lighter:rgb(var(--gray));
+    --secondary-color: rgb(var(--white));
+
+    --follow-btn: rgb(var(--green));
+    --unfollow-btn: rgb(var(--green-lighter));
+
+    --read-btn:rgb(var(--maroon));
+    --reading-btn:rgb(var(--orange));
+    --wanttoread-btn:rgb(var(--gold));
+ 
+    --slider-color-first: rgb(var(--silver));
+    --slider-color-second:rgb(var(--darker-white));
+    --slider-color-third:rgb(var(--dark-white));
+
+}
+.sepia{
+    --main-color:rgb(var(--pearl));
+    --main-lighter:rgb(var(--bronze));
+    --secondary-color: rgb(var(--cafe-noir));
+
+    --follow-btn: rgb(var(--cafe-noir));
+    --unfollow-btn: rgb(var(--pearl));
+
+    --read-btn:rgb(var(--maroon));
+    --reading-btn:rgb(var(--orange));
+    --wanttoread-btn:rgb(var(--gold));
+ 
+    --slider-color-first: rgb(var(--cafe-noir));
+    --slider-color-second:rgb(var(--coffee));
+    --slider-color-third:rgb(var(--beige));
+
+}

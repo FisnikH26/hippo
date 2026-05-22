@@ -1,16 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-const BookCard = ({ book }) => { 
-  
+const BookCard = ({ book }) => {
+
   return (
     <div className="bookCard mt-2">
       <Link to={`/book/${book.id}`}>
-        <div className="bookCard_imgContainer rounded-2">
+        <div className=" rounded-2">
           <img
             src={book.cover}
             alt={book.title}
             loading="lazy"
-            className="w-100 h-100"
+            style={{ height: "250px" }}
+            className="w-100 ratio"
           />
         </div>
       </Link>
@@ -51,6 +52,8 @@ const BookCard = ({ book }) => {
             </span>
           ))} */}
         </div>
+
+        
       </div>
     </div>
   );

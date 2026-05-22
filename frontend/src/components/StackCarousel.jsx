@@ -10,13 +10,10 @@ const StackCarousel = () => {
 
   useEffect(() => { 
     setMyShelf({
-      read: booksRead.filter((book) => book.userId == loggedIn.id),
-      reading: booksReading.filter((book) => book.userId == loggedIn.id),
-      wantToRead: booksToBeRead.filter((book) => book.userId == loggedIn.id),
-      totalBooksInShelf:
-        booksRead.filter((book) => book.userId == loggedIn.id).length +
-        booksReading.filter((book) => book.userId == loggedIn.id).length +
-        booksToBeRead.filter((book) => book.userId == loggedIn.id).length,
+      read: booksRead,
+      reading: booksReading,
+      wantToRead: booksToBeRead,
+totalBooksInShelf: booksRead.length + booksReading.length + booksToBeRead.length
     });
   }, [booksRead, booksReading, booksToBeRead]);
 

@@ -18,7 +18,7 @@ const RecentlyView = () => {
               .reverse()
               .map((book, i) => {
                 return (
-                  <div className="d-flex gap-2 mt-1 align-items-center" key={book.id}>
+                  <div className="d-flex gap-2 mt-1 align-items-center" key={i}>
                     <Link to={`/book/${book.id}`}>
                       <Image src={book.cover} width="70px" height={100} />
                     </Link>
