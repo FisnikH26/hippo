@@ -16,7 +16,7 @@ function App() {
   const { loggedIn, setLoggedIn, theme, setTheme } =
     useContext(HippoReadsContext);
   return (
-    <BrowserRouter>
+    <BrowserRouter> 
       {loggedIn == undefined ? (
         <div>
           <Routes>
